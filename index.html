@@ -1,1 +1,184 @@
-﻿<!doctype html><meta charset='utf-8'><title>app-ads.txt</title><p>app-ads.txt is hosted here.</p>
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pixel Plunge</title>
+  <meta name="description" content="Pixel Plunge — collect coins, chase high scores, complete daily challenges." />
+
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+
+  <style>
+    :root {
+      --bg0: #070a1a;
+      --bg1: #0b1233;
+      --card: rgba(255,255,255,0.08);
+      --stroke: rgba(255,255,255,0.14);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --accent: #6ee7ff;
+      --accent2: #a78bfa;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(900px 600px at 15% 10%, rgba(110,231,255,0.22), transparent 55%),
+        radial-gradient(900px 600px at 85% 20%, rgba(167,139,250,0.18), transparent 55%),
+        radial-gradient(900px 600px at 50% 95%, rgba(59,130,246,0.12), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      min-height: 100vh;
+    }
+
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 56px; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 10px 2px; margin-bottom: 18px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand img { width: 44px; height: 44px; border-radius: 12px; }
+    .brand .title { font-weight: 800; letter-spacing: 0.2px; }
+    .brand .sub { color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+    .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 10px 14px; border-radius: 12px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,0.06);
+      color: var(--text); text-decoration: none; font-weight: 650;
+      transition: transform .12s ease, background .12s ease;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.10); }
+    .btn.primary {
+      border: 1px solid rgba(110,231,255,0.35);
+      background: linear-gradient(90deg, rgba(110,231,255,0.18), rgba(167,139,250,0.18));
+    }
+
+    .hero {
+      display: grid; grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px; align-items: stretch; margin-top: 14px;
+    }
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+
+    .card {
+      border: 1px solid var(--stroke);
+      background: var(--card);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.28);
+    }
+
+    .heroText { padding: 22px 20px 18px; }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 40px; line-height: 1.05;
+      letter-spacing: -0.6px;
+    }
+    .tagline { color: var(--muted); font-size: 16px; line-height: 1.55; margin: 0 0 16px; }
+    .chips { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 0; }
+    .chip {
+      padding: 8px 10px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      color: rgba(255,255,255,0.86);
+      background: rgba(0,0,0,0.10);
+      font-size: 13px; font-weight: 650;
+    }
+
+    .imgBlock img { width: 100%; display: block; }
+    .imgCaption { padding: 10px 14px; color: var(--muted); font-size: 13px; }
+
+    .grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 18px; margin-top: 18px;
+    }
+    @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+    .pad { padding: 16px 16px 14px; }
+    .sectionTitle { font-weight: 800; margin: 0 0 8px; }
+    .sectionText { margin: 0; color: var(--muted); line-height: 1.6; }
+
+    .footer {
+      margin-top: 26px;
+      color: rgba(255,255,255,0.62);
+      font-size: 12px;
+      display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      padding: 0 2px;
+    }
+    .footer a { color: rgba(255,255,255,0.78); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <img src="assets/icon.png" alt="Pixel Plunge icon" />
+        <div>
+          <div class="title">Pixel Plunge</div>
+          <div class="sub">Arcade • High score • Daily challenges</div>
+        </div>
+      </div>
+      <div class="btns">
+        <a class="btn primary" href="https://mrbox94.github.io/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
+        <a class="btn" href="https://sites.google.com/view/pixelplungeprivacypolicy/home" target="_blank" rel="noopener">Privacy Policy</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="card heroText">
+        <h1>Drop in. Collect coins. Chase the high score.</h1>
+        <p class="tagline">
+          Pixel Plunge is a fast, feel-good arcade game with simple controls, satisfying upgrades,
+          and daily challenges to keep you coming back.
+        </p>
+        <div class="chips">
+          <div class="chip">Gather coins</div>
+          <div class="chip">High-score runs</div>
+          <div class="chip">Daily challenges</div>
+          <div class="chip">Quick sessions</div>
+        </div>
+      </div>
+
+      <div class="card imgBlock">
+        <img src="assets/feature-image.jpeg" alt="Pixel Plunge feature image" />
+        <div class="imgCaption">Feature art</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card imgBlock">
+        <img src="assets/Promo1.jpeg" alt="Pixel Plunge promo collage" />
+        <div class="imgCaption">In-game highlights</div>
+      </div>
+
+      <div class="card pad">
+        <div class="sectionTitle">Links</div>
+        <p class="sectionText">
+          • <a href="https://sites.google.com/view/pixelplungeprivacypolicy/home" target="_blank" rel="noopener">Privacy Policy</a><br/>
+          • <a href="https://mrbox94.github.io/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a>
+        </p>
+        <div style="height: 12px;"></div>
+        <div class="sectionTitle">About</div>
+        <p class="sectionText">
+          This site exists mainly to host <strong>app-ads.txt</strong> for ad verification, but you might as well make it look decent 🙂
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> Pixel Plunge</div>
+      <div>
+        <a href="https://sites.google.com/view/pixelplungeprivacypolicy/home" target="_blank" rel="noopener">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
