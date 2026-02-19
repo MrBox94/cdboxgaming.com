@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pixel Plunge</title>
-  <meta name="description" content="Pixel Plunge — collect coins, chase high scores, complete daily challenges." />
+  <title>CDBoxgaming</title>
+  <meta name="description" content="CDBoxgaming — solo indie dev building fun, polished mobile games." />
 
-  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="icon" type="image/png" href="assets/CDBOxgaming.png" />
 
   <style>
     :root {
@@ -80,6 +80,7 @@
       letter-spacing: -0.6px;
     }
     .tagline { color: var(--muted); font-size: 16px; line-height: 1.55; margin: 0 0 16px; }
+
     .chips { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 0; }
     .chip {
       padding: 8px 10px; border-radius: 999px;
@@ -101,6 +102,28 @@
     .sectionTitle { font-weight: 800; margin: 0 0 8px; }
     .sectionText { margin: 0; color: var(--muted); line-height: 1.6; }
 
+    .gamesHeader {
+      margin-top: 22px;
+      display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+      padding: 0 2px;
+    }
+    .gamesHeader h2 { margin: 0; font-size: 18px; letter-spacing: -0.2px; }
+    .gamesHeader p { margin: 0; color: var(--muted); font-size: 13px; }
+
+    .gameCard { overflow: hidden; }
+    .gameTop {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; padding: 14px 14px 12px;
+    }
+    .gameMeta { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .gameIcon { width: 44px; height: 44px; border-radius: 12px; flex: 0 0 auto; }
+    .gameName { font-weight: 850; margin: 0; line-height: 1.1; }
+    .gameSub { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
+
+    .gameBtns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; }
+    .gameBody { padding: 0 14px 14px; }
+    .gameDesc { margin: 10px 0 0; color: var(--muted); line-height: 1.6; }
+
     .footer {
       margin-top: 26px;
       color: rgba(255,255,255,0.62);
@@ -117,71 +140,160 @@
   <div class="wrap">
     <div class="nav">
       <div class="brand">
-        <img src="assets/icon.png" alt="Pixel Plunge icon" />
+        <img src="assets/CDBOxgaming.png" alt="CDBoxgaming logo" />
         <div>
-          <div class="title">Pixel Plunge</div>
-          <div class="sub">Arcade • High score • Daily challenges</div>
+          <div class="title">CDBoxgaming</div>
+          <div class="sub">Solo indie dev • Mobile games • Clean & fun gameplay</div>
         </div>
       </div>
 
       <div class="btns">
-        <a class="btn primary"
-           href="https://play.google.com/store/apps/details?id=com.callum.pixelplunge&utm_source=apac_med"
-           target="_blank" rel="noopener">
-          Play Now
-        </a>
+        <!-- Optional: add a contact email or socials later -->
+        <a class="btn"
+           href="#games"
+           >Games</a>
 
+        <!-- If you have a single developer privacy page later, link it here -->
         <a class="btn"
            href="https://sites.google.com/view/pixelplungeprivacypolicy/home"
            target="_blank" rel="noopener">
-          Privacy Policy
+          Privacy
         </a>
       </div>
     </div>
 
     <div class="hero">
       <div class="card heroText">
-        <h1>Drop in. Collect coins. Chase the high score.</h1>
+        <h1>Small games. Big polish.</h1>
         <p class="tagline">
-          Pixel Plunge is a fast, feel-good arcade game with simple controls, satisfying upgrades,
-          and daily challenges to keep you coming back.
+          CDBoxgaming is a solo indie developer focused on building simple, satisfying mobile games —
+          quick to learn, fun to master, and designed for short sessions.
         </p>
         <div class="chips">
-          <div class="chip">Gather coins</div>
-          <div class="chip">High-score runs</div>
-          <div class="chip">Daily challenges</div>
-          <div class="chip">Quick sessions</div>
+          <div class="chip">Arcade</div>
+          <div class="chip">Puzzle</div>
+          <div class="chip">Fast sessions</div>
+          <div class="chip">Fair progression</div>
         </div>
       </div>
 
       <div class="card imgBlock">
-        <img src="assets/feature-image.jpeg" alt="Pixel Plunge feature image" />
+        <!-- Using your combined promo image as a nice "studio" splash -->
+        <img src="assets/Icon%20%26%20Feature%20Image.png" alt="CDBoxgaming games" />
       </div>
     </div>
 
-   <div class="grid">
-  <div class="card imgBlock">
-    <img src="assets/Promo1.jpeg" alt="Pixel Plunge promo collage" />
-  </div>
+    <div class="grid">
+      <div class="card pad">
+        <div class="sectionTitle">About</div>
+        <p class="sectionText">
+          I make mobile games under the CDBoxgaming name — focused on responsive controls,
+          clear goals, and that “one more run” feeling. I’m currently building and supporting
+          titles across Android, with more updates on the way.
+        </p>
+      </div>
 
-  <div class="card pad">
-    <div class="sectionTitle">About</div>
-    <p class="sectionText">
-      CDBoxgaming is a solo indie developer focused on creating simple, fun, and polished arcade experiences.
-      Pixel Plunge is our first released game, built as a passion project and a learning journey into game development.
-    </p>
-  </div>
-</div>
+      <div class="card imgBlock">
+        <img src="assets/CDBOxgaming.png" alt="CDBoxgaming logo" />
+        <div class="imgCaption">CDBoxgaming — indie development</div>
+      </div>
+    </div>
 
-<div class="footer">
-  <div>© <span id="y"></span> Pixel Plunge</div>
-  <div>
-    <a href="https://sites.google.com/view/pixelplungeprivacypolicy/home"
-       target="_blank" rel="noopener">
-      Privacy Policy
-    </a>
+    <div id="games" class="gamesHeader">
+      <h2>Games</h2>
+      <p>Two projects — one released, one in-progress.</p>
+    </div>
+
+    <div class="grid">
+      <!-- Pixel Plunge -->
+      <div class="card gameCard">
+        <div class="gameTop">
+          <div class="gameMeta">
+            <img class="gameIcon" src="assets/pixelplungeicon.png" alt="Pixel Plunge icon" />
+            <div style="min-width:0;">
+              <p class="gameName">Pixel Plunge</p>
+              <p class="gameSub">Arcade • High score • Daily challenges</p>
+            </div>
+          </div>
+
+          <div class="gameBtns">
+            <a class="btn primary"
+               href="https://play.google.com/store/apps/details?id=com.callum.pixelplunge&utm_source=apac_med"
+               target="_blank" rel="noopener">
+              Play
+            </a>
+            <a class="btn"
+               href="https://sites.google.com/view/pixelplungeprivacypolicy/home"
+               target="_blank" rel="noopener">
+              Privacy
+            </a>
+          </div>
+        </div>
+
+        <div class="imgBlock">
+          <img src="assets/pixelplungefeature-image.jpeg" alt="Pixel Plunge feature image" />
+        </div>
+
+        <div class="gameBody">
+          <p class="gameDesc">
+            Drop in for quick runs, gather coins, and chase your best score.
+            Built for satisfying progression and “just one more try” momentum.
+          </p>
+        </div>
+      </div>
+
+      <!-- Fruitfall -->
+      <div class="card gameCard">
+        <div class="gameTop">
+          <div class="gameMeta">
+            <img class="gameIcon" src="assets/Icon.png" alt="Fruitfall icon" />
+            <div style="min-width:0;">
+              <p class="gameName">Fruitfall</p>
+              <p class="gameSub">Puzzle • Match & clear • Progression</p>
+            </div>
+          </div>
+
+          <div class="gameBtns">
+            <!-- Update these links when Fruitfall is live -->
+            <a class="btn primary"
+               href="#"
+               onclick="return false;"
+               title="Coming soon">
+              Coming soon
+            </a>
+            <a class="btn"
+               href="#"
+               onclick="return false;"
+               title="Add Fruitfall privacy URL when ready">
+              Privacy
+            </a>
+          </div>
+        </div>
+
+        <div class="imgBlock">
+          <img src="assets/Feature%20Image.png" alt="Fruitfall feature image" />
+        </div>
+
+        <div class="gameBody">
+          <p class="gameDesc">
+            A colourful puzzle game built for smooth gameplay and steady progression.
+            More details and a Play Store link will be added here as the release approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> CDBoxgaming</div>
+      <div>
+        <a href="#games">Games</a>
+        <span style="opacity:.45;">•</span>
+        <a href="https://sites.google.com/view/pixelplungeprivacypolicy/home" target="_blank" rel="noopener">
+          Privacy
+        </a>
+      </div>
+    </div>
   </div>
-</div>
 
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
